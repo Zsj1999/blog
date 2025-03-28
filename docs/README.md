@@ -174,3 +174,4 @@ footer: MIT Licensed | Copyright © 2024-present
   background: rgba(30, 30, 30, 0.8);
 }
 </style>
+
