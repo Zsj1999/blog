@@ -1,0 +1,44 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches:
+      # 确保这是你的默认分支
+      - main
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          submodules: false  # 添加这行，明确不使用子模块
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+          
+      - name: Install Dependencies
+        run: |
+          npm install
+          npm list  # 显示安装的依赖
+          
+      - name: Build Docs
+        run: |
+          npm run docs:build
+        env:
+          DEBUG: vuepress*  # 添加调试输出
+          
+      - name: List Build Output
+        run: ls -la docs/.vuepress/dist  # 检查构建输出
+          
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: docs/.vuepress/dist
+          clean: true 
