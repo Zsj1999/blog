@@ -39,6 +39,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
+          branch: gh-pages  # 部署到 gh-pages 分支
           folder: docs/.vuepress/dist
           clean: true 
