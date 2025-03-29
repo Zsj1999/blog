@@ -18,15 +18,15 @@ export default defineUserConfig({
   defaultURL: '/',
   theme: defaultTheme({
     logo: '/images/logo.jpg',
-    home: '/blog/',
+    home: '/',
     navbar: [
       {
         text: '🏠 首页',
-        link: '/blog/',
+        link: '/',
       },
       {
         text: '📖 前端开发笔记',
-        link: '/blog/guide/webblog/home.html',
+        link: '/guide/webblog/home.html',
       },
     
       // {
@@ -41,7 +41,7 @@ export default defineUserConfig({
       // },
       {
         text: '📝 面试题',
-        link: '/blog/guide/webblog/interview.html'
+        link: '/guide/webblog/interview.html'
       },
       {
         text: '🤖 AI工具',
@@ -56,5 +56,5 @@ export default defineUserConfig({
     '@theme/Navbar.vue': path.resolve(__dirname, './theme/components/Navbar.vue'),
     '@theme/NavbarItems.vue': path.resolve(__dirname, './theme/components/NavbarItems.vue')
   },
-  base: '/blog/',
+  base: '/',
 })
