@@ -5,13 +5,13 @@ title: 前端开发笔记
 <div class="profile-container">
   <div class="profile-header">
     <div class="avatar-section">
-      <RouterLink to="/blog/guide/README.html" class="avatar-link">
+      <RouterLink to="/guide/README.html" class="avatar-link">
         <img class="avatar" src="/images/logo.jpg" alt="头像">
       </RouterLink>
       <CurrentTime />
     </div>
     <div class="profile-info">
-      <RouterLink to="/blog/guide/README.html" class="title-link">
+      <RouterLink to="/guide/README.html" class="title-link">
         <h1>
           <span class="title-icon">📖</span>
           前端开发笔记ss
@@ -39,7 +39,7 @@ title: 前端开发笔记
   <div class="tech-container">
     <h2 class="section-title">技术栈</h2>
     <div class="tech-list">
-      <div class="tech-item" @click="navigateTo('/blog/guide/webblog/html.html')">
+      <div class="tech-item" @click="navigateTo('/guide/webblog/html.html')">
         <div class="tech-icon-wrapper">
           <span class="tech-icon">🌐</span>
         </div>
@@ -48,7 +48,7 @@ title: 前端开发笔记
           <span class="tech-desc">Web的骨架</span>
         </div>
       </div>
-      <div class="tech-item" @click="navigateTo('/blog/guide/webblog/css.html')">
+      <div class="tech-item" @click="navigateTo('/guide/webblog/css.html')">
         <div class="tech-icon-wrapper">
           <span class="tech-icon">🎨</span>
         </div>
@@ -57,7 +57,7 @@ title: 前端开发笔记
           <span class="tech-desc">网页的外观</span>
         </div>
       </div>
-      <div class="tech-item" @click="navigateTo('/blog/guide/webblog/javascript.md')">
+      <div class="tech-item" @click="navigateTo('/guide/webblog/javascript.md')">
         <div class="tech-icon-wrapper">
           <span class="tech-icon">⚡</span>
         </div>
@@ -66,7 +66,7 @@ title: 前端开发笔记
           <span class="tech-desc">网页的行为</span>
         </div>
       </div>
-      <div class="tech-item" @click="navigateTo('/blog/guide/webblog/React.md')">
+      <div class="tech-item" @click="navigateTo('/guide/webblog/React.md')">
         <div class="tech-icon-wrapper">
           <span class="tech-icon">⚛️</span>
         </div>
@@ -75,7 +75,7 @@ title: 前端开发笔记
           <span class="tech-desc">UI框架</span>
         </div>
       </div>
-      <div class="tech-item" @click="navigateTo('/blog/guide/webblog/vue.md')">
+      <div class="tech-item" @click="navigateTo('/guide/webblog/vue.md')">
         <div class="tech-icon-wrapper">
           <span class="tech-icon">🖖</span>
         </div>
@@ -84,7 +84,7 @@ title: 前端开发笔记
           <span class="tech-desc">渐进式框架</span>
         </div>
       </div>
-      <div class="tech-item" @click="navigateTo('/blog/guide/webblog/interview.md')">
+      <div class="tech-item" @click="navigateTo('/guide/webblog/interview.md')">
         <div class="tech-icon-wrapper">
           <span class="tech-icon">📝</span>
         </div>
