@@ -462,6 +462,73 @@ title: 前端开发笔记
     font-size: 3rem;
   }
 }
+
+/* 浅色模式 */
+:root {
+  --text-primary: #2c3e50;
+  --text-secondary: #666;
+  --text-tertiary: #999;
+  --bg-quote: rgba(255, 255, 255, 0.8);
+}
+
+/* 深色模式 */
+.dark {
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  --text-tertiary: #888888;
+  --bg-quote: rgba(30, 30, 30, 0.8);
+}
+
+/* 更新文本颜色 */
+.profile-info h1 {
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.english-quote {
+  color: var(--text-tertiary);
+}
+
+.tech-name {
+  color: var(--text-primary);
+}
+
+.tech-desc {
+  color: var(--text-secondary);
+}
+
+.stat-label {
+  color: var(--text-secondary);
+}
+
+.quote-content {
+  background: var(--bg-quote);
+}
+
+.quote-text {
+  color: var(--text-primary);
+}
+
+/* 深色模式下的特殊处理 */
+.dark .tech-item {
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.dark .profile-info h1 {
+  background: linear-gradient(120deg, #3eaf7c, #89d4a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .quote-text .highlight {
+  color: #3eaf7c;
+  background: linear-gradient(120deg, #3eaf7c, #89d4a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>
 
 <script>
