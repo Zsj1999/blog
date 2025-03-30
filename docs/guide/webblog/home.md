@@ -14,7 +14,7 @@ title: 前端开发笔记
       <RouterLink to="/guide/README.html" class="title-link">
         <h1>
           <span class="title-icon">📖</span>
-          前端开发笔记ss
+          前端开发笔记
         </h1>
       </RouterLink>
       <p class="subtitle">把梦想种进生活，用汗水浇灌，等待花开满路。</p>
